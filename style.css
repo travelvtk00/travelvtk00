@@ -1,0 +1,418 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    min-height: 100vh;/*увеличить величину всех блоков по высоте в высоту страницы (100%)*/
+}
+.header {
+    background: url(/img/bg.png) center center no-repeat; 
+    /*устанавливаем картинку как фон (на ней можно размещать текст)*/
+    padding-top: 44px;
+    /*опускаем текст на картинке*/
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu a {
+    margin-right: 100px;
+    /*создаем отступы между словами*/
+    text-decoration: none; /*уберем подчеркивание*/
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400; /*стандартная толщина букв*/
+    letter-spacing: 2.8px;
+    /*промежуток между буквами*/
+}
+
+.menu a:last-child {
+    margin-right: 0px; 
+    /*убираем смещение последней ссылки справа, чтобы центрировать текст*/
+}
+
+.header-text {
+    text-align: center; /*центрируем текст*/
+    margin-top: 300px; /*смещение относительно начала страницы, а не блока*/
+}
+
+.header-text h1 {
+    color: #ffffff;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.header-text p {
+    margin-top: 15px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4.2px;
+}
+
+.header-text button {
+    cursor: pointer; /*изменение курсора, когда наводишь на кнопку*/
+    margin-top: 40px; /*смещаем текст вниз*/
+    border: 2px solid white; /*создаем белую рамку*/
+    /*padding-top: 20px; 
+    padding-bottom: 20px;
+    padding-left: 85px;
+    padding-right: 85px;*/
+    /*увеличиваем рамку*/
+    padding: 20px 85px;
+    background: none; /*убируем белый фон кнопки*/
+    color: #ffffff; /*цвет текста*/
+    font-size: 18px; /*шрифт*/
+    font-weight: 400; /*жирность теста*/
+    text-transform: uppercase; 
+    letter-spacing: 2.52px; /*расстояние между буквами*/
+    transition: ease-in .25s all; /*при наведенеии будет эффект ease-in*/
+}
+
+.header-text button:hover {
+    /*эффекты наведения курсора*/
+    background-color: white;
+    color: black;
+    border-color: black; /*создаем белую рамку*/
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about_text span {
+    margin-top: 235px;
+
+    width: 123px;
+    height: 17px;
+    color: #c4c4c4;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 3.08px;
+}
+
+.about_text h2 {
+    margin-top: 32px;
+
+    width: 635px;
+    height: 57px;
+    color: #000000;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4.2px;
+}
+
+.about_text p {
+    margin-top: 54px;
+
+    width: 806px;
+    height: 126px;
+    color: #5b5b5c;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 3.08px;
+}
+
+.about_text button {
+    cursor: pointer; /*изменение курсора, когда наводишь на кнопку*/
+    margin-top: 84px;
+    border: 2px solid black;
+    padding: 20px 80px;
+    background-color: white;
+
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2.52px;
+}
+
+.about_text button:hover {
+    /*эффекты наведения курсора*/
+    background-color: #000;
+    color: #fff;
+}
+
+.photos h2 {
+    margin-top: 105px;
+    text-align: center;
+
+    color: #000000;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 7.2px;
+}
+
+.photos h3 {
+    margin-top: 36px;
+    text-align: center;
+
+    color: #5b5b5c;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 4.2px;
+}
+
+.photos_img {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.photos_img img {
+    margin: 10px;  
+}
+
+.third {
+    flex-wrap: wrap;
+}
+
+.third_text h2 {
+    text-align: center;
+    margin-top: 220px;
+
+    color: #000000;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 7.2px;
+}
+
+.third_text h3 {
+    text-align: center;
+    margin-top: 36px;
+
+    color: #5b5b5c;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 4.2px;
+}
+
+.column {
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+}
+
+.column_1 {
+    margin-right: 15px;
+}
+
+.column_1 h2 {
+    margin-top: 60px;
+
+    color: #000000;
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.column_1 p {
+    margin-top: 40px;
+
+    color: #848484;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 3.9px;
+}
+
+.column_1 button {
+    cursor: pointer;
+    margin-top: 50px;
+    padding: 5px 20px;
+
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 41px;
+    text-transform: uppercase;
+    letter-spacing: 3.0px;
+}
+
+.column_2 {
+    margin-left: 15px;
+}
+
+.column_2 h2 {
+    margin-top: 60px;
+
+    color: #000000;
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.column_2 p {
+    margin-top: 40px;
+
+    color: #848484;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 3.9px;
+}
+
+.column_2 button {
+    cursor: pointer;
+    margin-top: 50px;
+    padding: 5px 20px;
+
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 41px;
+    text-transform: uppercase;
+    letter-spacing: 3.0px;
+}
+
+.fourth {
+    flex-wrap: wrap;
+    margin-top: 120px;
+    display: flex;
+}
+
+.fourth img {
+    margin-left: 90px;
+}
+
+.fourth-text {
+    margin-left: 90px;
+    margin-top: 150px;
+}
+
+.fourth-text span {
+    color: #c4c4c4;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 3.08px;
+}
+
+.fourth-text h1 {
+    margin-top: 30px;
+
+    color: #000000;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 41px;
+    text-transform: uppercase;
+    letter-spacing: 4.0px;
+}
+
+.fourth-text p {
+    margin-top: 45px;
+
+    color: #5b5b5c;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 2.8px;
+}
+
+.discount {
+    padding: 150px;
+    background-color: #eceaea;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.discount-text {
+    margin-right: 100px;
+}
+
+.discount-text h2 {
+    color: #000000;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 41px;
+    text-transform: uppercase;
+    letter-spacing: 4.2px;
+}
+
+.discount-text p {
+    color: #5b5b5c;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2.52px;
+}
+
+.discount input {
+    border: 2px solid #7a7a7a;
+    padding: 27px 32px;
+    margin-right: 40px;
+    background: transparent; /*прозрачный фон (фон секции)*/
+
+    color: #3a4047;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 3.08px;
+}
+
+.discount button {
+    padding: 27px 87px;
+    background-color: #3a4047;
+    border: 2px solid #7a7a7a;
+
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3.08px;
+    transition: ease .25s; /*время изменения фона при наведении (hover)*/
+}
+
+.discount button:hover {
+    background-color: white;
+    color: black;
+    background: transparent;
+}
+
+.footer {
+    text-align: center;
+    padding: 95px;
+}
+
+.footermenu {
+    margin-bottom: 65px;
+}
+
+.footermenu a {
+    text-decoration: none; /*убрать подчеркивание*/
+    margin-right: 45px;
+
+    color: #000000;
+    font-size: 22px;
+    letter-spacing: 3.4px;
+}
+
+.footermenu a:last-child {
+    margin-right: 0;   /*отступ у правого элемента*/
+}
+
+.footer menu {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 6.12px;
+}
+
+.footer p {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.last_p {
+    margin-bottom: 15px;
+}
